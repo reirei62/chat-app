@@ -1,0 +1,40 @@
+.wrapper{
+  display:flex;
+}
+.side-bar{
+  width:300px;
+  height:100vh;
+}
+
+.main-chat{
+  width: calc(100% - 300px);
+}
+
+.side-header{
+  background-color:#2f3E51;
+  height:100px;
+  padding:0 20px;
+}
+.chatroom{
+  background-color:#253141;
+  height:calc(100vh - 100px);
+  padding:0 20px;
+}
+
+.main-header{
+  background-color:#ffffff;
+  height:100px;
+  padding:0 40px;
+}
+
+.message{
+  height:calc(100vh - 190px);
+  background-color:#fafafa;
+  padding:46px 40px 0;
+}
+
+.main-footer{
+  background-color: #dddddd;
+  height:90px;
+  padding: 20px 40px;
+}
