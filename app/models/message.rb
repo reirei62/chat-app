@@ -3,4 +3,9 @@ class Message < ApplicationRecord
   belongs_to :room
   has_one_attached :image
   validate :name,presence: true
+  validates :content, presence: true, unless: :was_attached?
+
+  def was_attached?
+    self.image.attached?
+  end
 end
